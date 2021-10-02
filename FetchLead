@@ -1,7 +1,7 @@
 public with sharing class FetchLead {
-		@AuraEnabled
-    public static List<Lead> Lea()
+    @AuraEnabled
+    public static List<Lead> Lead()
     {
-        return[Select Id,LastName from Lead];
+        return[Select Id from Lead]; //fetch Id and lastName
     }
 }
